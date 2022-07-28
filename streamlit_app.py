@@ -4,3 +4,6 @@ streamlit.header('👌Breakfast favourites')
 streamlit.text('🌚Blueberry oatmeal & omega 3')
 streamlit.text('🌾Kale, spinach & rocket smoothie')
 streamlit.text('🥚Hardboiled free range eggs')
+import pandas
+my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+streamlit.dataframe(my_fruit_list)
